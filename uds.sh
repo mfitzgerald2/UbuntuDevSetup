@@ -17,37 +17,37 @@ if [ $cont = 1 ]
 then
     tput setaf 2; echo Continuing the Script!
     tput setaf 4; echo Currently Updating Packages and Repositories...
-    tput setaf 1; sudo apt-get update
+    tput setaf 7; sudo apt-get update
     sudo apt-get upgrade -y
 
     tput setaf 4; echo Currently making sure standard utilities like SSH are installed
-    tput setaf 1; sudo apt-get install -y openssh-server openssh-client git curl proftpd samba
+    tput setaf 7; sudo apt-get install -y openssh-server openssh-client git curl proftpd samba
 
     tput setaf 4; echo Currently Installing C and C++ Development Tools...
-    tput setaf 1; sudo apt-get install -y build-essential
+    tput setaf 7; sudo apt-get install -y build-essential
 
     tput setaf 4; echo Currently Instaling Python and development Tools...
-    tput setaf 1; sudo apt-get install -y python3-pip
+    tput setaf 7; sudo apt-get install -y python3-pip
     sudo apt-get insyall -y python-devel
     sudo apt-get install -y python3-venv
 
     tput setaf 4; echo Currently Instaling LAMP and development Tools...
-    tput setaf 1; sudo apt-get install -y tasksel
+    tput setaf 7; sudo apt-get install -y tasksel
     sudo tasksel install lamp-server
 
     echo tput setaf 4; Currently Instaling Java JDK and development Tools...
-    tput setaf 1; sudo apt-get install -y openjdk-8-jdk
+    tput setaf 7; sudo apt-get install -y openjdk-8-jdk
     export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
     export PATH=$PATH:/usr/lib/jvm/java-8-openjdk/bin
 
     tput setaf 4; echo Currently Instaling NodeJS, jQuery and development Tools...
-    tput setaf 1; sudo apt-get install -y python-software-properties
+    tput setaf 7; sudo apt-get install -y python-software-properties
     curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
     sudo apt-get install -y nodejs
     npm install jquery
 
     tput setaf 4; echo Currently Installing Visual Studio Code...
-    tput setaf 1; curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+    tput setaf 7; curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
     sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
     sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
     sudo apt-get update
