@@ -40,7 +40,7 @@ then
     export PATH=$PATH:/usr/lib/jvm/java-8-openjdk/bin
 
     tput setaf 4; echo Currently Instaling NodeJS, jQuery and development Tools...
-    sudo apt-get install python-software-properties
+    sudo apt-get install -y python-software-properties
     curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
     sudo apt-get install -y nodejs
     npm install jquery
