@@ -2,7 +2,7 @@ echo This Setup Script for Ubuntu will install a full development environment on
 echo This script is being ran by $USER on $HOSTNAME.
 echo This script will only work of the above user is a memer of the sudoers group.
 read -p 'Type 1 if the user is a member of the sudoers group and you wish to continue' cont
-if $cont == 1
+if [ $cont = 1 ] 
 then
     echo Continuing the Script!
     echo Currently Updating Packages and Repositories...
