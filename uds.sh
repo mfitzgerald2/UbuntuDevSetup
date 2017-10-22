@@ -1,9 +1,10 @@
-echo  _   _______  _____ 
-echo | | | |  _  \/  ___|
-echo | | | | | | |\ `--. 
-echo | | | | | | | `--. \
-echo | |_| | |/ / /\__/ /
-echo  \___/|___/  \____/
+#!/bin/bash
+#echo  _   _______  _____ 
+#echo | | | |  _  \/  ___|
+#echo | | | | | | |\ `--. 
+#echo | | | | | | | `--. \
+#echo | |_| | |/ / /\__/ /
+#echo  \___/|___/  \____/
 echo 
 echo The Ubuntu Dev Setup Script - Copyright 2017 Matthew Fitzgerald
 echo 
